@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" href="css/w4_2.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Image Steganography</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="media/video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="nav1">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">Steganography</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item active nav-link" href="#">Home <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="comp/about.html">About</a>
+            <a class="nav-item nav-link" href="comp/instructions.html">Instructions</a>
+            <!-- <a class="nav-item nav-link" href="comp/filters.html">Filters</a> -->
+
+
+          </div>
+        </div>
+      </nav>
+   </div>
+      
+      <div class="content pos row-centered">
+        <div class='test1 col-md-12 col-sm-12 col-xs-12 col-centered'>
+               
+                </div>
+
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                  <strong>Note: </strong> Please refer to
+                  <a href="instructions.html"  target="_blank" class="alert-link">Instructions</a> for instructions on how to use the website
+                  <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+             
+
+            <h1>Image Steganography</h1>
+            
+
+            <div class="container">
+                <div class="row row-content">
+                 
+                    <div class="order-sm-first can1 col-xl-6">
+                        <h2>
+                            Image 1
+                        </h2>
+                        <canvas id="canvas">
+                        </canvas> 
+                    <!-- <div class="test_but1"> -->
+
+                        <input type="file" 
+                        multiple="false" 
+                        accept="image/*"
+                        id="finput"
+                       class="col1 in1"
+                        onchange="upload()">
+                      
+                      
+                     
+                        <button type="button" 
+                        class="btn btn-primary"
+                        onclick = "download_img()">
+                        Download</button>
+                        <!-- </div> -->
+                      </div>
+                 
+                    <div class="order-sm-last can2 col-xl-6">
+                        <h2>
+                            Image 2
+                        </h2>
+                        <canvas id="canvas1">
+                        </canvas> 
+        
+                        <input type="file" 
+                        multiple="false" 
+                        accept="image/*"
+                        id="finput1"
+                        class="col1 in2"
+                        onchange="upload1()">
+
+                        <button type="button" 
+                        class="btn btn-primary"
+                        onclick = "download_img1()">
+                        Download</button>
+                    </div>    
+                  
+                </div>
+                </div>
+
+
+                <div class="stag_but1">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </symbol>
+                  
+                  </svg>
+
+                  <div id="alert_s1" class="alert alert-success alert-dismissible collapse" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                    <strong>Steganography sucessful! </strong> Image1 has been hidden in Image2. Download Image2 to save results
+                    <button type="button" class="btn-close" id="linkClose" aria-label="Close"></button>
+                  </div>
+
+                  <div id="alert_e1" class="alert alert-danger alert-dismissible collapse" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                    <strong>Extraction sucessful! </strong> Secret image retrieved in 'Image1'. Download Image1 to save results
+                    <button type="button" class="btn-close" id="linkClose1" aria-label="Close"></button>
+                  </div>
+
+                  <div id="alert_c1" class="alert alert-primary alert-dismissible collapse" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                    <strong>Clear sucessful! </strong> Images have been cleared
+                    <button type="button" class="btn-close" id="linkClose2" aria-label="Close"></button>
+                  </div>
+                    <input type = "button"
+                        value = "Hide Image"
+                        id = "clr1"
+                        class="col1 btn btn-warning"
+                        onclick = "stag()">
+                
+                        <input type = "button"
+                        value = "Extract Image"
+                        id = "clr"
+                        class="col1 btn btn-danger"
+                        onclick = "extractionMain()">
+                
+                        <input type = "button"
+                        value = "Clear Canvases"
+                        id = "clr"
+                        class="col1 c1 btn btn-light"
+                        onclick = "clearCanvas()">
+                </div>
+              
+
+         </div>
+    
+
+    </div>
+
+
+
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="js/w4_2.js"></script>
+
+
+<!-- /////////////////////////// -->
+</body>
+</html>

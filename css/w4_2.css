@@ -1,0 +1,357 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  }
+
+
+
+  canvas{
+    height:300px;
+    border: 1px solid;
+    /* box-shadow: 5px 10px 18px #888888; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+     /* margin: 10px; */
+    }
+
+    .can_cont{
+      padding: 0px;
+    }
+
+.container{
+  margin-bottom: 10px;
+}
+
+    #myVideo {
+      position: fixed;
+      /* right: 0; */
+      bottom: 0;
+      /* top: 0; */
+      width: 100%; 
+  
+      /* min-height: 10%; */
+    }
+
+    .content{
+      position: fixed;
+      text-align: center;
+    }
+    
+    .col-centered {
+      display:inline-block;
+      float:none;
+      text-align:left;
+  }
+
+  .row-centered {
+    text-align:center;
+    margin:0px
+}
+  
+  .pos{
+    position: relative;
+  }
+  
+
+  
+  
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+div{
+    text-align: center;
+    margin: 0;
+}
+
+p{
+  margin-left: 10px;
+}
+
+.col1{
+  font-size: 15px;
+}
+
+div h1{
+  color: white;
+  margin-bottom: 40px;
+}
+
+div h2{
+  color: white;
+}
+/* //////////////////navbar///////////////////// */
+
+div .navbar{
+  color: #579abe;
+  padding-top: 10px;
+}
+
+div .navbar-brand {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+div .navbar-nav a{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav a{
+  color: #579abe !important;
+  /* color:#e03e52 !important; */
+
+}
+
+nav{
+  padding: 20px;
+}
+
+nav button{
+  color: #579abe !important;
+  background-color: #579abe !important;
+}
+
+div .navbar-nav .active, .navbar-brand{
+  filter: brightness(140%);
+}
+/* //////////////////buttons///////////////////// */
+
+.col1{
+  text-align: center;
+  margin: auto;
+}
+
+input .col1{
+  
+display:flex;
+}
+
+div .buttons1{
+  text-align: center;
+
+font-size: 25px;
+/* margin-left: 10px; */
+}
+
+.col1{
+  font-size: 15px;
+  
+}
+
+
+div .test_but1{
+  margin: 0px auto 0px auto;
+  /* padding-right: 0px; */
+}
+
+div .stag_but1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+} 
+
+.stag_but1 input{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+.s1{
+  /* color: gold; */
+  color: white;
+  background-color: #579abe;
+  padding: 0px 10px 5px 10px;
+}
+
+.e1{
+  color: white;
+  background-color: #e03e52;
+  padding: 0px 10px 5px 10px;
+
+}
+
+
+
+.container-fluid{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#alert_s1, #alert_e1, #alert_c1{
+  margin-bottom: 0px;
+}
+
+
+/* //////////////////media/////////////////////// */
+
+@media (max-width: 1200px) {
+  #myVideo{
+    position: fixed;
+    right: 0;
+    /* bottom: 0; */
+    top:0;
+    width:120%;
+ 
+  }
+
+
+
+  .test1{
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  
+
+}
+
+@media (min-width: 953) and (max-width: 1150px) {
+  #myVideo{
+    position: fixed;
+    right: 0;
+    /* bottom: 0; */
+    top:0;
+    width:150%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #myVideo{
+    position: fixed;
+    right: 0;
+    /* bottom: 0; */
+    top:0;
+    width:150%;
+  }
+  .col1{
+    font-size: 20px;
+  }
+  
+
+}
+
+
+@media (min-width: 567px) and (max-width: 768px) {
+  #myVideo{
+    position: fixed;
+    right: 0;
+    /* bottom: 0; */
+    top:0;
+    width:250%;
+    margin:0px;
+    padding:0px
+  }
+
+  .col1{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  canvas{
+    height: 300px;
+  }
+  
+}
+
+@media (max-width: 567px){
+
+  #myVideo{
+    /* position: fixed;
+    right: 0;
+    width:400%; */
+    display: none;
+  }
+
+ 
+    body {
+      background: url("../media/vm1.png") no-repeat;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+  
+  .col1{
+    font-size: 20px;
+
+  }
+
+  .stag_but1 input{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+  }
+
+  .stag_but1{
+    margin-bottom: 50px;
+  }
+
+  canvas{
+    height: 240px;
+  }
+
+
+  div .test1{
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+
+
+  .can1 input{
+    /* margin-left:10px ; */
+    margin-bottom: 20px;
+  }
+
+  .can2 input{
+    /* margin-left:10px ; */
+    margin-bottom: 20px;
+
+  }
+
+  div .can2{
+    margin-top: 40px;
+  }
+
+  .stag_but1 input{
+    font-size: 25px;
+  }
+
+  
+}
+
+
+/* ///////////////////////about/////////////////////////////// */
+
+.container .what, .container .how, .container .use, .points, .container .hide, .container .extract{
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.what p, .how p, .points{
+  text-align: left;
+  font-size: 17px;
+}
+
+
+
+/* //////////////////////////instructions////////////////// */
+
+.container .hide, .container .extract, .about-hide{
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+  rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, 
+  rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  background:rgba(0, 0, 0, 0.3)
+  /* opacity: 0.1; */
+}
+
+.container .hide p{
+  font-size: 18px;
+}
