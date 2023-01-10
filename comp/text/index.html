@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Text Encryption</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <main class="mt-4">
+          <section>
+            <h1 class="text-center">Text Encryption</h1>
+
+            <h4 class="mt-2">Input</h4>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Enter Text here"
+                id="data-input"
+                style="height: 100px"
+              ></textarea>
+            </div>
+          </section>
+          <section>
+            <h4>Secret</h4>
+            <!-- <input
+              type="text"
+              id="secret"
+              autocomplete="false"
+              name="secret"
+              value=""
+            /> -->
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Secret Key"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+                id="secret"
+                autocomplete="false"
+                name="secret"
+              />
+            </div>
+            <button type="button" id="encrypt" class="btn btn-danger">
+              Encrypt
+            </button>
+            <hr />
+            <h4>Initialization Vector (iv)</h4>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Secret Key"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+                id="iv"
+              />
+            </div>
+            <label for="linkify" class="linkify-label mb-2">
+              Linkify text links (http/https)
+              <input id="linkify" type="checkbox" name="linkify" checked />
+            </label>
+            <button type="button" id="decrypt" class="btn btn-dark">
+              Decrypt
+            </button>
+            <p id="message"></p>
+          </section>
+          <section>
+            <h4>Output</h4>
+            <div id="data-output" class="output content"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="code.js"></script>
+  </body>
+</html>
