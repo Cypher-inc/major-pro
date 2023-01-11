@@ -57,9 +57,10 @@ label input[type="text"] {
   color: black !important;
 }
 
-.form-floating label {
+.form-floating textarea {
   color: black !important;
 }
+
 
 /* Media Queries */
 /* // Small devices (landscape phones, less than 768px) */
