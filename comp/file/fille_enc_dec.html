@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="../../css/bootstrap.min.css" />
   </head>
 
-  <body> 
+  <body>
     <div class="container mt-4">
       <div class="row">
         <div class="divTablefullwidth">
           <div class="divTableBody">
             <div class="divTableRow">
-              <img src="data.png" class="img-thumbnail rounded mx-auto d-block" alt="File Enc/Dec">
+              <img
+                src="data.png"
+                class="img-thumbnail rounded mx-auto d-block"
+                alt="File Enc/Dec"
+              />
               <div class="divTableCell">
                 <h1>File Encryption / Decryption</h1>
                 <h5>Use your web browser to encrypt and decrypt files.</h5>
@@ -73,8 +77,10 @@
               <div class="divTableCell">Password</div>
               <div class="divTableCell">
                 <input
+                  class="form-control"
                   id="txtEncpassphrase"
                   type="password"
+                  placeholder="Enter Password"
                   size="30"
                   onkeyup="javascript:encvalidate();"
                   value=""
@@ -85,10 +91,12 @@
               </div>
             </div>
             <div class="divTableRow">
-              <div class="divTableCell">Password (retype)</div>
+              <div class="divTableCell">Retype Password</div>
               <div class="divTableCell">
                 <input
                   id="txtEncpassphraseretype"
+                  placeholder="Retype Password"
+                  class="form-control"
                   type="password"
                   size="30"
                   onkeyup="javascript:encvalidate();"
@@ -151,7 +159,9 @@
         <p></p>
 
         <div>
-          <a id="aEncsavefile" hidden><button class="btn btn-info">Save Encrypted File</button></a>
+          <a id="aEncsavefile" hidden
+            ><button class="btn btn-info">Save Encrypted File</button></a
+          >
         </div>
 
         <p></p>
@@ -179,6 +189,7 @@
               <div class="divTableCell">Password</div>
               <div class="divTableCell">
                 <input
+                  class="form-control"
                   id="txtDecpassphrase"
                   type="password"
                   size="30"
@@ -240,7 +251,9 @@
         <p></p>
 
         <div>
-          <a id="aDecsavefile" hidden><button class="btn btn-info">Save Decrypted File</button></a>
+          <a id="aDecsavefile" hidden
+            ><button class="btn btn-info">Save Decrypted File</button></a
+          >
         </div>
 
         <p></p>

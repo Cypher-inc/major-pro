@@ -106,6 +106,21 @@ a:hover {
   color: black !important;
 }
 
+.form-control{
+  width: 40% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+}
+
+.divTableCell{
+  font-weight: 500 !important;
+}
+
+
+.divTableCell input:focus{
+  background-color: rgb(232, 245, 255);
+}
 /* /////////////media queries/////////// */
 @media (max-width: 768px) {
   .dropzone {
@@ -120,5 +135,15 @@ a:hover {
   .img-thumbnail{
     height: 5em !important;
     width: 5em !important;
+  }
+  body {
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+
+  .form-control{
+    width: 80% !important;
+  
   }
 }

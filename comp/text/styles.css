@@ -61,6 +61,20 @@ label input[type="text"] {
   color: black !important;
 }
 
+.img-thumbnail {
+  height: 7vw !important;
+  width: 7vw !important;
+  background: rgb(0, 0, 0, 0) !important;
+  border-color: rgb(0, 0, 0, 0) !important;
+}
+
+.form-floating textarea:focus {
+  background-color: rgb(232, 245, 255);
+}
+
+.input-group input:focus {
+  background-color: rgb(232, 245, 255);
+}
 
 /* Media Queries */
 /* // Small devices (landscape phones, less than 768px) */
@@ -79,5 +93,10 @@ label input[type="text"] {
   }
   button {
     font-size: 1.5em !important;
+  }
+
+  .img-thumbnail {
+    height: 5em !important;
+    width: 5em !important;
   }
 }
