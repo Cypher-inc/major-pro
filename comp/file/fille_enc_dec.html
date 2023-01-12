@@ -9,21 +9,23 @@
     <link rel="stylesheet" href="../../css/bootstrap.min.css" />
   </head>
 
-  <body>
-    <div class="container">
+  <body> 
+    <div class="container mt-4">
       <div class="row">
         <div class="divTablefullwidth">
           <div class="divTableBody">
             <div class="divTableRow">
+              <img src="data.png" class="img-thumbnail rounded mx-auto d-block" alt="File Enc/Dec">
               <div class="divTableCell">
                 <h1>Web Browser Based File Encryption / Decryption</h1>
                 <h4>Use your web browser to encrypt and decrypt files.</h4>
               </div>
-              <div class="mt-3 btn-Class d-flex justify-content-evenly divTableCell">
+              <div
+                class="mt-3 btn-Class d-flex justify-content-evenly divTableCell"
+              >
                 <button
                   type="btn"
-                  class="btn btn-primary
-				  "
+                  class="btn btn-primary"
                   id="btnDivEncrypt"
                   onClick="javascript:switchdiv('encrypt');"
                 >
@@ -45,7 +47,6 @@
                   Decrypt a File
                 </button>
               </div>
-
             </div>
           </div>
         </div>
@@ -56,159 +57,195 @@
       <hr />
     </div>
 
-<div class="container" id="divEncryptfile">
-		<div class="row">
-			
-      <h2>Encrypt a File</h2>
-      <p>
-        To encrypt a file, enter a password and drop the file to be encrypted
-        into the dropzone below. The file will then be encrypted using the
-        password, then you'll be given an opportunity to save the encrypted file
-        to your system.
-      </p>
+    <div class="container enc-cont" id="divEncryptfile">
+      <div class="row">
+        <h2>Encrypt a File</h2>
+        <p class="enc-p">
+          To encrypt a file, enter a password and drop the file to be encrypted
+          into the dropzone below. The file will then be encrypted using the
+          password, then you'll be given an opportunity to save the encrypted
+          file to your system.
+        </p>
 
-      <div class="divTable">
-        <div class="divTableBody">
-          <div class="divTableRow">
-            <div class="divTableCell">Password</div>
-            <div class="divTableCell">
-              <input
-                id="txtEncpassphrase"
-                type="password"
-                size="30"
-                onkeyup="javascript:encvalidate();"
-                value=""
-              />
+        <div class="divTable">
+          <div class="divTableBody">
+            <div class="divTableRow">
+              <div class="divTableCell">Password</div>
+              <div class="divTableCell">
+                <input
+                  id="txtEncpassphrase"
+                  type="password"
+                  size="30"
+                  onkeyup="javascript:encvalidate();"
+                  value=""
+                />
+              </div>
+              <div class="divTableCell">
+                (minumum length eight characters, make sure it strong!)
+              </div>
             </div>
-            <div class="divTableCell">
-              (minumum length eight characters, make sure it strong!)
-            </div>
-          </div>
-          <div class="divTableRow">
-            <div class="divTableCell">Password (retype)</div>
-            <div class="divTableCell">
-              <input
-                id="txtEncpassphraseretype"
-                type="password"
-                size="30"
-                onkeyup="javascript:encvalidate();"
-                value=""
-              />
-            </div>
-            <div class="divTableCell">
-              <span class="greenspan" id="spnCheckretype"></span>
+            <div class="divTableRow">
+              <div class="divTableCell">Password (retype)</div>
+              <div class="divTableCell">
+                <input
+                  id="txtEncpassphraseretype"
+                  type="password"
+                  size="30"
+                  onkeyup="javascript:encvalidate();"
+                  value=""
+                />
+              </div>
+              <div class="divTableCell">
+                <span class="greenspan" id="spnCheckretype"></span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <p></p>
+        <p></p>
 
-      <div class="align-items-center">
-        <div
-          class="dropzone"
-          id="encdropzone"
-          ondrop="drop_handler(event);"
-          ondragover="dragover_handler(event);"
-          ondragend="dragend_handler(event);"
-        >
-          <p>
-            Drag and drop the file to be encrypted into this dropzone, or click
-            <a onclick="javascript:encfileElem.click();">here</a> to select
-            file.
-          </p>
-          <p><span id="spnencfilename"></span></p>
+        <div class="align-items-center">
+          <div
+            class="dropzone"
+            id="encdropzone"
+            ondrop="drop_handler(event);"
+            ondragover="dragover_handler(event);"
+            ondragend="dragend_handler(event);"
+          >
+            <p>
+              Drag and drop the file to be encrypted into this dropzone, or
+              click
+              <a onclick="javascript:encfileElem.click();">here</a> to select
+              file.
+            </p>
+            <p><span id="spnencfilename"></span></p>
+          </div>
+          <input
+            type="file"
+            id="encfileElem"
+            style="display: none"
+            onchange="selectfile(this.files)"
+          />
         </div>
-        <input
-          type="file"
-          id="encfileElem"
-          style="display: none"
-          onchange="selectfile(this.files)"
-        />
+
+        <p></p>
+
+        <div class="divTable">
+          <div class="divTableBody">
+            <div class="divTableRow">
+              <div class="divTableCell">
+                <button
+                  id="btnEncrypt"
+                  class="btn btn-primary"
+                  onclick="javascript:encryptfile();"
+                  disabled
+                >
+                  Encrypt File
+                </button>
+              </div>
+              <div class="divTableCell"><span id="spnEncstatus"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <p></p>
+
+        <div>
+          <a id="aEncsavefile" hidden><button class="btn btn-info">Save Encrypted File</button></a>
+        </div>
+
+        <p></p>
       </div>
+    </div>
 
-      <p></p>
+    <!-- //////////////////////////////////////// -->
 
-		<div class="divTable">
-			<div class="divTableBody">
-			<div class="divTableRow">
-				<div class="divTableCell">
-				<button
-					id="btnEncrypt"
-					onclick="javascript:encryptfile();"
-					disabled
-				>
-					Encrypt File
-				</button>
-				</div>
-				<div class="divTableCell"><span id="spnEncstatus"></span></div>
-			</div>
-			</div>
-		</div>
+    <!-- <div class="container">
+      <hr />
+    </div> -->
 
-		<p></p>
+    <div class="container enc-cont" id="divDecryptfile">
+      <div class="row">
+        <h2>Decrypt a File</h2>
+        <p class="enc-p">
+          Decrypt a file using the password that was previously used to encrypt
+          the file. After the file is decrypted, you'll be given an opportunity
+          to save the decrypted file to your system.
+        </p>
 
-		<div>
-			<a id="aEncsavefile" hidden><button>Save Encrypted File</button></a>
-		</div>
+        <div class="divTable">
+          <div class="divTableBody">
+            <div class="divTableRow">
+              <div class="divTableCell">Password</div>
+              <div class="divTableCell">
+                <input
+                  id="txtDecpassphrase"
+                  type="password"
+                  size="30"
+                  onkeyup="javascript:decvalidate();"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<p></p>
-	</div>
-</div>
+        <p></p>
 
+        <div>
+          <div
+            class="dropzone"
+            id="decdropzone"
+            ondrop="drop_handler(event);"
+            ondragover="dragover_handler(event);"
+            ondragend="dragend_handler(event);"
+          >
+            <p>
+              Drag and drop file to be decrypted into this dropzone, or click
+              <a role="button" onclick="javascript:decfileElem.click();"
+                >here</a
+              >
+              to select file.
+            </p>
+            <p><span id="spndecfilename"></span></p>
+          </div>
+          <input
+            type="file"
+            id="decfileElem"
+            style="display: none"
+            onchange="selectfile(this.files)"
+          />
+        </div>
 
-				<!-- //////////////////////////////////////// -->
+        <p></p>
 
-				<div class=container>
-					<hr>
-				</div>
+        <div class="divTable">
+          <div class="divTableBody">
+            <div class="divTableRow">
+              <div class="divTableCell">
+                <button
+                  id="btnDecrypt"
+                  class="btn btn-danger"
+                  onclick="javascript:decryptfile();"
+                  disabled
+                >
+                  Decrypt File
+                </button>
+              </div>
+              <div class="divTableCell"><span id="spnDecstatus"></span></div>
+            </div>
+          </div>
+        </div>
 
-		<div class="container" id=divDecryptfile>
-			<div class="row">
+        <p></p>
 
-			<h2>Decrypt a File</h2>
-			<p>Decrypt a file using the password that was previously used to encrypt the file.  After the file is decrypted, you'll be given an opportunity to save the decrypted file to your system.</p>
+        <div>
+          <a id="aDecsavefile" hidden><button class="btn btn-info">Save Decrypted File</button></a>
+        </div>
 
-			<div class="divTable">
-				<div class="divTableBody">
-					<div class="divTableRow">
-						<div class="divTableCell">Password</div>
-						<div class="divTableCell"><input id=txtDecpassphrase type=password size=30 onkeyup=javascript:decvalidate(); value=''></div>
-					</div>
-				</div>
-			</div>
-
-			<p> </p>
-
-			<div>
-					<div class=dropzone  id="decdropzone" ondrop="drop_handler(event);" ondragover="dragover_handler(event);" ondragend="dragend_handler(event);">
-						<p>Drag and drop file to be decrypted into this dropzone, or click <a role=button onclick=javascript:decfileElem.click();>here</a> to select file.</p>
-						<p><span id=spndecfilename></span></p>
-					</div>
-					<input type="file" id="decfileElem" style="display:none" onchange="selectfile(this.files)">
-			</div>
-
-			<p> </p>
-
-			<div class="divTable">
-				<div class="divTableBody">
-					<div class="divTableRow">
-						<div class="divTableCell"><button id=btnDecrypt onclick=javascript:decryptfile(); disabled>Decrypt File</button></div>
-						<div class="divTableCell"><span id=spnDecstatus></span></div>
-					</div>
-				</div>
-			</div>
-
-			<p> </p>
-
-			<div>
-				<a id=aDecsavefile hidden><button>Save Decrypted File</button></a>
-			</div>
-		
-			<p> </p>
-		</div>
-	</div>
-
+        <p></p>
+      </div>
+    </div>
   </body>
   <script type="text/javascript" src="scripts.js"></script>
 </html>

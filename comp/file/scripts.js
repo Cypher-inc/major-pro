@@ -214,7 +214,7 @@ async function encryptfile() {
   var blob = new Blob([resultbytes], { type: "application/download" });
   var blobUrl = URL.createObjectURL(blob);
   aEncsavefile.href = blobUrl;
-  aEncsavefile.download = objFile.name + ".enc";
+  aEncsavefile.download = objFile.name;
 
   spnEncstatus.classList.add("greenspan");
   spnEncstatus.innerHTML = "<p>File encrypted.</p>";
@@ -291,7 +291,7 @@ async function decryptfile() {
   var blob = new Blob([plaintextbytes], { type: "application/download" });
   var blobUrl = URL.createObjectURL(blob);
   aDecsavefile.href = blobUrl;
-  aDecsavefile.download = objFile.name + ".dec";
+  aDecsavefile.download = objFile.name;
 
   spnDecstatus.classList.add("greenspan");
   spnDecstatus.innerHTML = "<p>File decrypted.</p>";

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="../../css/bootstrap.min.css" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
 
   <body>
@@ -25,11 +25,11 @@
               ></textarea>
             </div>
           </section>
-          <section>
+          <section class="mt-3">
             <h4>Secret</h4>
             <div class="input-group mb-3">
               <input
-                type="text"
+                type="password"
                 class="form-control"
                 placeholder="Enter Secret Key"
                 aria-label="Username"
@@ -39,7 +39,7 @@
                 name="secret"
               />
             </div>
-            <button type="button" id="encrypt" class="btn btn-danger">
+            <button type="button" id="encrypt" class="btn btn-primary">
               Encrypt
             </button>
             <hr />
@@ -58,7 +58,7 @@
               Linkify text links (http/https)
               <input id="linkify" type="checkbox" name="linkify" checked />
             </label>
-            <button type="button" id="decrypt" class="btn btn-dark">
+            <button type="button" id="decrypt" class="btn btn-danger">
               Decrypt
             </button>
             <p id="message"></p>

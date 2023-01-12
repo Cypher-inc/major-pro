@@ -6,7 +6,28 @@ body {
   width: 70% !important;
   margin-left: 15% !important;
   margin-right: 15% !important;
-  margin-top: 5% !important;
+}
+
+.enc-cont{
+  text-align: center !important;
+}
+
+.dropzone {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.img-thumbnail{
+  height: 7vw !important;
+  width: 7vw !important;
+  background: rgb(0, 0, 0, 0.0) !important;
+  border-color: rgb(0, 0, 0, 0.0) !important;
+}
+
+.enc-p{
+  padding-left: 8vw !important;
+  padding-right: 8vw !important;
 }
 
 *{
@@ -79,4 +100,25 @@ a:hover {
 
 .redspan {
   color: red;
+}
+
+.divTableCell input{
+  color: black !important;
+}
+
+/* /////////////media queries/////////// */
+@media (max-width: 768px) {
+  .dropzone {
+    width: 60%;
+  }
+  
+  .enc-p{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .img-thumbnail{
+    height: 5em !important;
+    width: 5em !important;
+  }
 }
