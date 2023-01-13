@@ -13,7 +13,7 @@
 <div class="wrap text-center">
 <body>
 <center>
-<img src="images/passcheck.png" alt="PassCheck logo" style="width:160px;height:150px;">
+<img src="images/padlock.png" alt="PassCheck logo" style="width:160px;height:150px;">
 <br>
 <font size=6>
 PassCheck
@@ -26,7 +26,7 @@ Some handy password tools.
 
 <body>
     <p class="head">Generator:</p>
-    <form action="" name="passGen" class="form-floating">
+    <form action="" name="passGen">
         <input type="text" name="length" size="3" value="" placeholder="Specify length..." class="input">
 	<br><br>
         <input type="text" name="output" size="18" placeholder="Password will generate here..." class="output">
@@ -43,8 +43,11 @@ Some handy password tools.
     </head>
     <body>
 	<input id="password-box" placeholder="Enter password..." type="password" />
-        <div id="password-time" class="hsimp-time"></div>
-        <ul id="password-checks" class="hsimp-checks"></ul>	   
+        <div class="pass-info mt-3">
+            <div id="password-time" class="hsimp-time"></div>
+            <ul id="password-checks" class="hsimp-checks"></ul>	  
+        </div>
+ 
         <script src="js/hsimp.min.js"></script>	 
 	<script>
             (function (doc) {
@@ -88,19 +91,15 @@ Some handy password tools.
                 attachTo(passwordInput);
             }(this.document));
         </script>
-    </body>
-
 <hr>
-
         <p class="head">Breach checker:</p>
         <form id="passForm" action="#">
             <input type="password" placeholder="Enter password..." id="password" />
-	    <br>
+            <br>
             <br>
             <input type="submit" value="Check" id="submitPass"/>
         </form>
         <div id="result"></div>
-    </body>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/pwned.js" ></script>
     <script>
@@ -122,10 +121,10 @@ Some handy password tools.
 <hr>
 
 <center>
-<font size="1">
-This site is for educational use. Entered passwords are not logged.
-<br>
-</font>
+    <h5>
+        This site is for educational use. Entered passwords are not logged.
+
+    </h5>
 </center>
 
 </body>

@@ -4,12 +4,12 @@ body {
   width: 100%;
   height: 100%;
   font-size: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1120%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1380.902%2c896.201C1475.112%2c898.171%2c1580.415%2c889.599%2c1629.989%2c809.462C1681.35%2c726.437%2c1656.74%2c618.91%2c1602.765%2c537.56C1554.407%2c464.676%2c1468.368%2c433.64%2c1380.902%2c434.045C1294.264%2c434.447%2c1208.97%2c466.431%2c1162.574%2c539.6C1112.803%2c618.093%2c1100.7%2c720.142%2c1149.231%2c799.408C1196.069%2c875.91%2c1291.22%2c894.325%2c1380.902%2c896.201' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M895.393%2c262.491C965.787%2c264.569%2c1037.201%2c233.617%2c1070.209%2c171.406C1101.658%2c112.132%2c1079.987%2c41.172%2c1042.261%2c-14.318C1009.458%2c-62.567%2c953.723%2c-86.977%2c895.393%2c-85.722C839.386%2c-84.517%2c789.214%2c-55.449%2c759.08%2c-8.224C726.185%2c43.327%2c710.081%2c106.969%2c737.583%2c161.588C767.679%2c221.358%2c828.502%2c260.517%2c895.393%2c262.491' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1747.647%2c547.982C1824.879%2c546.059%2c1871.6%2c470.125%2c1906.393%2c401.147C1936.957%2c340.553%2c1950.138%2c270.937%2c1917.371%2c211.505C1883.54%2c150.143%2c1817.65%2c116.276%2c1747.647%2c113.218C1671.282%2c109.882%2c1588.695%2c129.463%2c1550.134%2c195.461C1511.323%2c261.888%2c1536.984%2c342.293%2c1574.589%2c409.41C1613.304%2c478.509%2c1668.466%2c549.954%2c1747.647%2c547.982' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M283.786%2c884.35C375.611%2c881.562%2c448.543%2c816.568%2c494.558%2c737.056C540.671%2c657.374%2c561.235%2c561.441%2c517.562%2c480.396C471.854%2c395.576%2c380.082%2c342.637%2c283.786%2c345.925C192.411%2c349.045%2c121.91%2c416.336%2c76.115%2c495.468C30.219%2c574.774%2c6.448%2c669.742%2c49.611%2c750.568C94.999%2c835.561%2c187.477%2c887.275%2c283.786%2c884.35' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M736.271%2c1077.26C802.794%2c1078.283%2c864.696%2c1043.951%2c899.188%2c987.059C935.029%2c927.943%2c944.578%2c852.519%2c908.149%2c793.764C873.248%2c737.473%2c802.486%2c725.851%2c736.271%2c724.292C666.186%2c722.642%2c585.804%2c725.188%2c549.782%2c785.329C513.17%2c846.455%2c543.449%2c922.132%2c581.807%2c982.178C616.693%2c1036.788%2c671.477%2c1076.264%2c736.271%2c1077.26' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1120'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 }
 
 input {
-  /* background: #3a68db; */
   background: #f8f8f8;
   color: #0f0f0f;
   border: 1px solid #ddd;
@@ -36,8 +36,17 @@ input {
   color: aliceblue !important;
 }
 
-.form-floating input{
+
+input {
   color: #0f0f0f !important;
+}
+
+input:focus, input:hover{
+  background-color: rgb(232, 245, 255);
+}
+
+.pass-info{
+  margin-top: 1vw !important;
 }
 
 @media (max-width: 768px) {
