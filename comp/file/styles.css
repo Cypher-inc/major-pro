@@ -3,9 +3,9 @@ body {
   background-image: url("/comp/file/Sprinkle.svg");
   color: black;
   font-size: 11pt;
-  width: 70% !important;
-  margin-left: 15% !important;
-  margin-right: 15% !important;
+  width: 50% !important;
+  margin-left: 25% !important;
+  margin-right: 25% !important;
 }
 
 .enc-cont {
