@@ -1,6 +1,6 @@
 body {
   /* background-image: url("/comp/file/Poly.svg"); */
-  background-image: url('/comp/file/Sprinkle.svg');
+  background-image: url("/comp/file/Sprinkle.svg");
   color: black;
   font-size: 11pt;
   width: 70% !important;
@@ -8,7 +8,7 @@ body {
   margin-right: 15% !important;
 }
 
-.enc-cont{
+.enc-cont {
   text-align: center !important;
 }
 
@@ -18,27 +18,29 @@ body {
   margin-right: auto !important;
 }
 
-.img-thumbnail{
+.img-thumbnail {
   height: 7vw !important;
   width: 7vw !important;
-  background: rgb(0, 0, 0, 0.0) !important;
-  border-color: rgb(0, 0, 0, 0.0) !important;
+  background: rgba(22, 47, 115, 0) !important;
+  border-color: rgb(255, 255, 255, 0) !important;
+  /* clip-path: circle() !important; */
 }
 
-.enc-p{
+
+.enc-p {
   padding-left: 8vw !important;
   padding-right: 8vw !important;
 }
 
-*{
+* {
   color: aliceblue !important;
 }
 
-.divTableCell{
+.divTableCell {
   text-align: center;
 }
 
-.btnClass{
+.btnClass {
   display: flex !important;
   justify-content: space-evenly;
 }
@@ -69,7 +71,7 @@ a:hover {
 
 .dropzone {
   border: 10px dashed gray;
-  width: 20%;
+  width: 40%;
   padding: 2% 2% 5% 2%;
   text-align: center;
   margin: 5px 0 5px 0;
@@ -102,23 +104,21 @@ a:hover {
   color: red;
 }
 
-.divTableCell input{
+.divTableCell input {
   color: black !important;
 }
 
-.form-control{
+.form-control {
   width: 40% !important;
   margin-left: auto !important;
   margin-right: auto !important;
-
 }
 
-.divTableCell{
+.divTableCell {
   font-weight: 500 !important;
 }
 
-
-.divTableCell input:focus{
+.divTableCell input:focus {
   background-color: rgb(232, 245, 255);
 }
 /* /////////////media queries/////////// */
@@ -126,13 +126,13 @@ a:hover {
   .dropzone {
     width: 60%;
   }
-  
-  .enc-p{
+
+  .enc-p {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  
-  .img-thumbnail{
+
+  .img-thumbnail {
     height: 5em !important;
     width: 5em !important;
   }
@@ -142,8 +142,7 @@ a:hover {
     margin-right: 5% !important;
   }
 
-  .form-control{
+  .form-control {
     width: 80% !important;
-  
   }
 }
