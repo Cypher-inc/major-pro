@@ -1,0 +1,80 @@
+body {
+  background-color: black;
+  font-family: "muli" !important;
+}
+
+h1,h2 {
+  color: aliceblue;
+}
+
+/* /////////Navbar//////////// */
+.navbar {
+  background-color: black !important;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  font-weight: 500;
+  color: aliceblue !important;
+}
+
+.navbar-nav a {
+  font-size: 1.5em;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+/* /////////////home/////////////// */
+.home-container {
+  padding-top: 15em !important;
+  padding-bottom: 15em !important;
+  margin-left: 20% !important;
+  margin-right: 20% !important;
+  width: 60%;
+}
+
+.home-container h1 {
+  text-align: center;
+  font-size: 5em;
+  font-weight: 900;
+}
+
+.started button {
+  padding: 20px 40px 20px 40px;
+  color: aliceblue;
+  background-color: rgb(20, 20, 20);
+  border: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* //////////////Features////////////// */
+
+.features-cont{
+    background-color: #18181a;
+    padding-top: 8em !important;
+    padding-bottom: 8em !important;
+
+}
+
+.features-h1{
+    font-size: 4em;
+}
+
+.img-thumbnail {
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 50%;
+  height: 10em;
+  border: 0;
+  padding: 20px 20px 20px 20px ;
+}
+
+.card {
+  background-color: black;
+  color: aliceblue;
+}
+
+
+li{
+    margin-bottom: 15px !important;
+}
