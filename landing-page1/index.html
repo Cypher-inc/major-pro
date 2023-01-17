@@ -14,7 +14,6 @@
       type="text/css"
       href="../landing-page1/css/styles.css"
     />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Cybersecurity toolkit</title>
   </head>
   <body>
@@ -289,25 +288,33 @@
                 This site is meant for educational purposes only. We are do NOT store any form of data, text or files
             </p>
           </div>
+
+
           <div class="col-sm-4 col-12 dis-text">
             <h4>Contact Us</h4>
             <form action="https://formsubmit.co/godofxandar@gmail.com" method="POST">
               <div class="input-group mb-3">
-              <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-              <input type="hidden" name="_autoresponse" value="We have revieced your email! Our dev team will contact you soon">
-              
-              </div>
+              <input  class="form-control" type="email" name="email" placeholder="Email Address" required>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/landing-page1/Thankyou.html">
+              <input type="hidden" name="_autoresponse" value="Thank you for your interest! Your Message has been recieved. Our team will contact you soon">
+           </div>
 
               <div class="input-group mb-3">
-                <!-- <textarea class="form-control" aria-label="With textarea"></textarea> -->
               <textarea type="text" class="form-control" name="name" placeholder="Your message" required></textarea>
                 </div>
-              <input type="hidden" name="_captcha" value="false">
               <div class="services-btn send-btn mt-4 text-center">
                 <button class="bttn-dark" type="submit">Send</button>
               </div>
          </form>
+<!-- 
+         <form action="https://formsubmit.co/godofxandar@gmail.com" method="POST">
+          <input type="email" name="email" required>
+          <input type="text" name="name" required>
+          <button type="submit">Send</button>
+     </form> -->
           </div>
+
+
           <div class="col-sm-4 col-12 dis-text">
             <h4 class="mb-3">Devs Team</h4>
             <div class="row align-items-center justify-content-center my-3">
