@@ -14,6 +14,7 @@
       type="text/css"
       href="../landing-page1/css/styles.css"
     />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Cybersecurity toolkit</title>
   </head>
   <body>
@@ -221,7 +222,7 @@
         <div class="row justify-content-center text-center justify-content-around">
         <h1 class="text-center features-h1 mb-5">Services</h1>
           <div class="card pt-4" style="width: 18rem">
-            <img src="./images/enc.jpg" class="card-img-top" alt="..." />
+            <img src="./images/enc.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h4 class="card-title">Encryption</h4>
               <p class="card-text">
@@ -293,15 +294,55 @@
           <div class="col-sm-4 col-12 dis-text">
             <h4>Contact Us</h4>
             <form action="https://formsubmit.co/godofxandar@gmail.com" method="POST">
-              <input type="email" name="email" placeholder="Email Address" required>
+              <div class="input-group mb-3">
+              <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+              <input type="hidden" name="_autoresponse" value="We have revieced your email! Our dev team will contact you soon">
+              
+              </div>
+
+              <div class="input-group mb-3">
+                <!-- <textarea class="form-control" aria-label="With textarea"></textarea> -->
+              <textarea type="text" class="form-control" name="name" placeholder="Your message" required></textarea>
+                </div>
               <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_autoresponse" value="We have revieced your email! Our dev team will contact you soon">
-              <input type="text" name="name" placeholder="Your message" required>
-              <button type="submit">Send</button>
+              <div class="services-btn send-btn mt-4 text-center">
+                <button class="bttn-dark" type="submit">Send</button>
+              </div>
          </form>
           </div>
           <div class="col-sm-4 col-12 dis-text">
-            <h4>Devs Team</h4>
+            <h4 class="mb-3">Devs Team</h4>
+            <div class="row align-items-center justify-content-center my-3">
+              <div class="col-6">
+                  Kris Dsouza
+              </div>
+              <div class="col-6">
+                <img src="./images/instagram.svg" class="icon" alt="..." />
+                <img src="./images/github.svg" class="icon" alt="..." />
+              </div>
+            </div>
+
+
+            <div class="row align-items-center justify-content-center my-3">
+              <div class="col-6 ">
+                  Aaradhya Desai
+              </div>
+              <div class="col-6">
+                <img src="./images/instagram.svg" class="icon" alt="..." />
+                <img src="./images/github.svg" class="icon" alt="..." />
+              </div>
+            </div>
+          
+
+            <div class="row  align-items-center justify-content-center my-3">
+              <div class="col-6">
+                  Dhananjay Khedekar
+              </div>
+              <div class="col-6">
+                <img src="./images/instagram.svg" class="icon" alt="..." />
+                <img src="./images/github.svg" class="icon" alt="..." />
+              </div>
+            </div>
 
           </div>
         </div>

@@ -244,6 +244,15 @@ li {
 
 .dis-text{
   padding-left: 6% !important;
-  padding-right: 6% !important;
+  padding-right: 8% !important;
   text-align: justify;
+}
+
+.send-btn{
+  text-align: start !important;
+}
+
+.icon{
+height: 40px !important;
+margin-left: 5% !important;
 }
