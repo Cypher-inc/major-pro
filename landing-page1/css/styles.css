@@ -53,9 +53,9 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
-  width: 270px;
+  /* width: 270px; */
   font-weight: bold;
-  padding: 14px 0px;
+  /* padding: 14px 0px; */
   border: 3px solid #af52c3;
   border-radius: 2px;
   position: relative;
@@ -153,6 +153,17 @@ h2 {
   border-radius: 2%;
 }
 
+
+.services-btn button {
+  padding: 10px 15px 10px 15px;
+  color: aliceblue;
+  background-color: #5a4fcf;
+  border: 0;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 2%;
+}
+
 .home-container div h1 {
   /* background: linear-gradient(45deg, blue, transparent), radial-gradient(red, transparent); */
   background-color: #4158d0;
@@ -173,6 +184,11 @@ h2 {
   background-color: #18181a;
   padding-top: 8em !important;
   padding-bottom: 8em !important;
+}
+
+.s-cont {
+  padding-top: 6em !important;
+  padding-bottom: 7em !important;
 }
 
 .features-h1 {
@@ -199,4 +215,18 @@ h2 {
 
 li {
   margin-bottom: 15px !important;
+}
+
+/* /////////////Services/////////////// */
+.card-img-top{
+  height: 250px !important;
+}
+
+
+.card:hover {
+  transform: scale(1.15);
+  background-color: #18181a
+}
+.card {
+  transition: transform 0.5s;
 }
