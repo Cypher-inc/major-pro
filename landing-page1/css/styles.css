@@ -314,6 +314,11 @@ li {
     margin: 1px !important;
   }
 
+.f-cont{
+  padding-top: 5em !important; 
+  padding-bottom: 5em !important; 
+}
+  
   h2,
   h3 {
     font-size: 4vw;
@@ -362,6 +367,10 @@ li {
   margin-right: 13%;
     width: 76%;
     height: 200px !important;
+  }
+
+  .navbar-nav{
+    text-align: center;
   }
 
 }
