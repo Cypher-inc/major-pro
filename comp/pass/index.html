@@ -5,94 +5,171 @@
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
-<br>
-<div class="wrap text-center">
 <body>
-<center>
-<img src="images/padlock.png" alt="PassCheck logo" style="width:160px;height:150px;">
-<br>
-<font size=6>
-PassCheck
-</font>
-<br>
-Some handy password tools.
-</center>
-
-<hr>
-
-<body>
-    <p class="head">Generator:</p>
-    <form action="" name="passGen">
-        <input type="text" name="length" size="3" value="" placeholder="Specify length..." class="input">
-	<br><br>
-        <input type="text" name="output" size="18" placeholder="Password will generate here..." class="output">
-	<br><br>
-	<input type="button" value="Generate" onclick="populate(this.form.length.value)"/>
-    </form>
-    </main>
-    <script src="js/generator.js"></script>
-</body>
-
-<hr>
-
-	<p class="head">Strength checker:</p>
-    </head>
-    <body>
-	<input id="password-box" placeholder="Enter password..." type="password" />
-        <div class="pass-info mt-3">
-            <div id="password-time" class="hsimp-time"></div>
-            <ul id="password-checks" class="hsimp-checks"></ul>	  
+<section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="ms-4 navbar-brand" href="#">Cybersecurity toolkit</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap"
+        />
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              <a class="nav-link" href="#Features">Features</a>
+              <a class="nav-link" href="#Services">Services</a>
+             
+            </div>
+          </div>
         </div>
- 
-        <script src="js/hsimp.min.js"></script>	 
-	<script>
-            (function (doc) {
-                var passwordInput = doc.getElementById("password-box"),
-                    timeDiv = doc.getElementById("password-time"),
-                    checksList = doc.getElementById("password-checks");
-                // Code to render the time returned by HSIMP
-                var renderTime = function (time, input) {
-                    timeDiv.innerHTML = time || "";
-		};
-                // Code to output the checks returned by HSIMP
-                var renderChecks = function (checks, input) {
-                    checksList.innerHTML = "";
-                    for (var i = 0, l = checks.length; i < l; i++) {
-                        var li = doc.createElement("p"),
-                            title = doc.createElement("h4"),
-                            message = doc.createElement("blockquote");
-                        title.innerHTML = checks[i].name;
-                        li.appendChild(title);
-                        message.innerHTML = checks[i].message;
-                        li.appendChild(message);
-                        checksList.appendChild(li);
-                    }
-                };
-                // Setup the HSIMP object
-                var attachTo = hsimp({
-                    options: {
-                        calculationsPerSecond: 10e9, // 10 billion calculations per second
-                        good: 31557600e9, // 1 billion years
-                        ok: 31557600e3 // 1 thousand years
-                    },
-                    outputTime: renderTime,
-                    outputChecks: renderChecks
-                });
-                // setup custom values for "instantly"/"forever"
-                hsimp.setDictionary({
-                    "instantly": "Immediately",
-                    "forever": "Until the end of time, probably",
-                });
-                // Run the HSIMP
-                attachTo(passwordInput);
-            }(this.document));
-        </script>
-<hr>
-        <p class="head">Breach checker:</p>
+      </nav>
+</section>
+<section id="Home">
+    
+    <div class="container-fluid py-5 px-5 home-c">
+        <div class="row align-items-center">
+            <div class="col-8 ps-5">
+                <div class="home-t">
+                    <h5 class="mb-3">Some Features We Provide :</h5>
+                        <h1 class="mb-3">
+                            Check for if your password has been leaked
+                        </h1>
+                        <h1 class="mb-3">
+                            Generate Safe and Secure Passwords easily
+                        </h1>
+                        
+                        <h1 class="mb-3">
+                            Check the strength of your password
+                        </h1>
+                </div>
+                
+                <div class="started mt-5 text-center">
+                    <a href="#Generator">
+                        <button
+                        class="bttn-dark"
+                        type="button"
+                      >
+                        Get Started
+                      </button>
+                    </a>
+                    
+                  </div>
+            </div>
+            <div class="col-4 text-center">
+                <img src="images/padlock.png" alt="PassCheck logo" style="width:250px;height:230px;">
+                <h1>Pass-tools</h1>
+            </div>
+                  
+        </div>
+    </div>
+</section>
+   
+
+<section id="Generator">
+    <div class="container-fluid gen-c">
+        <div class="row gen-r">
+            <h1 class="mb-4">Password Generator</h1>
+            <form action="" name="passGen">
+                <input type="text" name="length" size="3" value="" placeholder="Specify length..." class="input">
+            <br><br>
+                <input type="text" name="output" size="18" placeholder="Password will generate here..." class="output">
+            <br><br>
+            <div class="started  text-center">
+                    <button
+                    class="bttn-dark"
+                    onclick="populate(this.form.length.value)"
+                    type="button"
+                  >
+                    Generate
+                  </button>
+                
+              </div>
+            <!-- <input type="button" value="Generate" onclick="populate(this.form.length.value)"/> -->
+            </form>
+            </main>
+            <script src="js/generator.js"></script>
+        </div>
+    </div>
+
+</section>
+
+<section id="Strength Checker">
+    <div class="container-fluid my-5">
+        <div class="row gen-r">
+            <h1 class="mb-3">Strength checker</h1>
+            <form action="#">
+        <input id="password-box" class="" placeholder="Enter password..." type="password" />
+            </form>
+        <!-- <input id="password-box" class="" placeholder="Enter password..." type="password" /> -->
+            <div class="pass-info mt-3">
+                <div id="password-time" class="hsimp-time"></div>
+                <ul id="password-checks" class="hsimp-checks"></ul>	  
+            </div>
+     
+            <script src="js/hsimp.min.js"></script>	 
+        <script>
+                (function (doc) {
+                    var passwordInput = doc.getElementById("password-box"),
+                        timeDiv = doc.getElementById("password-time"),
+                        checksList = doc.getElementById("password-checks");
+                    // Code to render the time returned by HSIMP
+                    var renderTime = function (time, input) {
+                        timeDiv.innerHTML = time || "";
+            };
+                    // Code to output the checks returned by HSIMP
+                    var renderChecks = function (checks, input) {
+                        checksList.innerHTML = "";
+                        for (var i = 0, l = checks.length; i < l; i++) {
+                            var li = doc.createElement("p"),
+                                title = doc.createElement("h4"),
+                                message = doc.createElement("blockquote");
+                            title.innerHTML = checks[i].name;
+                            li.appendChild(title);
+                            message.innerHTML = checks[i].message;
+                            li.appendChild(message);
+                            checksList.appendChild(li);
+                        }
+                    };
+                    // Setup the HSIMP object
+                    var attachTo = hsimp({
+                        options: {
+                            calculationsPerSecond: 10e9, // 10 billion calculations per second
+                            good: 31557600e9, // 1 billion years
+                            ok: 31557600e3 // 1 thousand years
+                        },
+                        outputTime: renderTime,
+                        outputChecks: renderChecks
+                    });
+                    // setup custom values for "instantly"/"forever"
+                    hsimp.setDictionary({
+                        "instantly": "Immediately",
+                        "forever": "Until the end of time, probably",
+                    });
+                    // Run the HSIMP
+                    attachTo(passwordInput);
+                }(this.document));
+            </script>
+
+
+
+<hr class="my-4">
+        <h1 class="mb-3">Breach checker</h1>
         <form id="passForm" action="#">
             <input type="password" placeholder="Enter password..." id="password" />
             <br>
@@ -118,13 +195,98 @@ Some handy password tools.
 		});
     </script>
 
-<hr>
+        </div>
 
-    <h5>
-        This site is for educational use. Entered Files / Texts / passwords are not logged.
-      </h5>
+    </div>
+</section>
 
 
+<section id="Footer">
+    <div class="foot-cont px-5 py-5 ">
+      <div class="row text-center justify-content-around">
+        <div class="col-sm-4 col-12 dis-text">
+          <h4>Disclaimer</h4>
+          <p>
+              This site is meant for educational purposes only. We are do NOT store any form of data, text or files
+          </p>
+        </div>
+
+
+        <div class="col-sm-4 col-12 dis-text dis1 mb-3">
+          <h4>Contact Us</h4>
+          <form action="https://formsubmit.co/godofxandar@gmail.com" method="POST">
+            <div class="input-group mb-3">
+            <input  class="form-control" type="email" name="email" placeholder="Email Address" required>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/landing-page1/Thankyou.html">
+            <input type="hidden" name="_autoresponse" value="Thank you for your interest! Your Message has been recieved. Our team will contact you soon">
+         </div>
+
+
+
+            <div class="input-group mb-3">
+            <textarea type="text" class="form-control" name="name" placeholder="Your Message" required></textarea>
+              </div>
+            <div class="services-btn send-btn mt-4 text-center">
+              <button class="bttn-dark" type="submit">Send</button>
+            </div>
+       </form>
+<!-- 
+       <form action="https://formsubmit.co/godofxandar@gmail.com" method="POST">
+        <input type="email" name="email" required>
+        <input type="text" name="name" required>
+        <button type="submit">Send</button>
+   </form> -->
+        </div>
+
+
+        <div class="col-sm-4 col-12 dis-text dis1">
+          <h4 class="mb-3">Devs Team</h4>
+          <div class="row align-items-center justify-content-center my-3">
+            <div class="col-6">
+                Kris Dsouza
+            </div>
+            <div class="col-6 icon-div">
+              <a href="https://www.instagram.com/kris_withh_a_k/" target="_blank"><img src="./images/instagram.png" class="icon" alt="..." /></a>
+              <a href="https://github.com/Cypher-inc" target="_blank"><img src="./images/github.png" class="icon" alt="..." /></a>
+            </div>
+          </div>
+
+
+          <div class="row align-items-center justify-content-center my-3">
+            <div class="col-6 ">
+                Aaradhya Desai
+            </div>
+            <div class="col-6">
+              <a href="https://www.instagram.com/desai_aaradhya/" target="_blank"><img src="./images/instagram.png" class="icon" alt="..." /></a>
+              <img src="./images/github.png" class="icon" alt="..." />
+            </div>
+          </div>
+        
+
+          <div class="row  align-items-center justify-content-center my-3">
+            <div class="col-6">
+                Dhananjay Khedekar
+            </div>
+            <div class="col-6">
+              <a href="https://www.instagram.com/dhananjay__khedkar/" target="_blank"><img src="./images/instagram.png" class="icon" alt="..." /></a>
+              <img src="./images/github.png" class="icon" alt="..." />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+  </section>
+
+<!-- <div class="container">
+    <div class="row">
+    
+	
+        </div>
+    </div> -->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
