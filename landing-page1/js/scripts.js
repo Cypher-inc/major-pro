@@ -7,10 +7,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -23,3 +20,26 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+///home content
+// var xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function () {
+//   if (this.readyState == 4 && this.status == 200) {
+//     document.getElementById("home-page-cont").innerHTML = this.responseText;
+//   }
+// };
+// xhttp.open("GET", "./snippets/home.html", true);
+// xhttp.send();
+
+// ///Pass
+// function loadPass() {
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//       document.getElementById("home-page-cont").innerHTML = this.responseText;
+//     }
+//   };
+//   xhttp.open("GET", "../../comp/pass/index.html", true);
+//   xhttp.send();
+// }
+
