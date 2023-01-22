@@ -182,6 +182,10 @@ padding-bottom: 7% !important;
 font-size: 1em !important;
 }
 
+.form-control{
+  color: #000 !important;
+}
+
 /* .gen-r > *{
   padding: 0 !important;
 } */

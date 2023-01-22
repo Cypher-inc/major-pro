@@ -85,6 +85,8 @@
         </div>
         <div class="btn-Class d-flex justify-content-evenly divTableCell">
           <a href="#enc">
+            <div class="services-btn1 send-btn">
+              <!-- <button class="bttn-dark" type="submit">Send</button> -->
             <button
               type="btn"
               class="btn btn-primary"
@@ -93,31 +95,40 @@
             >
               Encrypt a File
             </button>
-          </a>
+          </div>
 
-          <button
+          </a>
+          <div class="services-btn1 send-btn">
+            <button
             id="btnRefresh"
             class="btn btn-outline-info"
             onClick="javascript:location.reload();"
           >
             Refresh Page
           </button>
-          <a href="#dec">
-            <button
-            class="btn btn-danger"
-            id="btnDivDecrypt"
-            onClick="javascript:switchdiv('decrypt');"
-          >
-            Decrypt a File
-          </button>
-          </a>
+            </div>
+
+          
+            <div class="services-btn1 send-btn">
+              <a href="#dec">
+                <button
+                class="btn btn-danger"
+                id="btnDivDecrypt"
+                onClick="javascript:switchdiv('decrypt');"
+              >
+                Decrypt a File
+              </button>
+              </a>
+
+</div>
+          
          
         </div>
       </div>
     </section>
 
     <section id="enc"></section>
-    <div class="container-fluid py-5 enc-cont" id="divEncryptfile">
+    <div class="container enc-cont" id="divEncryptfile">
       <div class="row">
         <h2>Encrypt a File</h2>
         <p class="enc-p">
@@ -180,7 +191,7 @@
               Drag and drop the file to be encrypted into this dropzone, or
               click
               <a onclick="javascript:encfileElem.click();"
-                ><i><u>here</u></i></a
+                ><u>here</u></a
               >
               to select file.
             </p>
@@ -202,7 +213,7 @@
               <div class="divTableCell">
                 <button
                   id="btnEncrypt"
-                  class="btn btn-primary"
+                  class="btn btn-primary "
                   onclick="javascript:encryptfile();"
                   disabled
                 >
@@ -233,7 +244,7 @@
       <hr />
     </div> -->
 <section id="dec">
-  <div class="container py-5 enc-cont" id="divDecryptfile">
+  <div class="container enc-cont" id="divDecryptfile">
     <div class="row">
       <h2>Decrypt a File</h2>
       <p class="enc-p">
@@ -274,7 +285,7 @@
           <p>
             Drag and drop file to be decrypted into this dropzone, or click
             <a role="button" onclick="javascript:decfileElem.click();"
-              >here</a
+              ><u>here</u></a
             >
             to select file.
           </p>
@@ -356,7 +367,7 @@
           <div class="input-group mb-3">
           <textarea type="text" class="form-control" name="name" placeholder="Your Message" required></textarea>
             </div>
-          <div class="services-btn send-btn mt-4 text-center">
+          <div class="services-btn send-btn mt-4">
             <button class="bttn-dark" type="submit">Send</button>
           </div>
      </form>
