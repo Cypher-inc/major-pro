@@ -46,19 +46,19 @@ const decryptText = async (ctBuffer, iv, password) => {
   return plaintext;
 };
 
-const linkifyText = (text) => {
-  let urlRegex = /(https?:\/\/[^\s]+)/g;
-  return text.replace(
-    urlRegex,
-    (url) =>
-      `<a
-			target="_blank"
-			rel="noopener noreferrer"
-			href="${url}">
-			${url}
-		</a>`
-  );
-};
+// const linkifyText = (text) => {
+//   let urlRegex = /(https?:\/\/[^\s]+)/g;
+//   return text.replace(
+//     urlRegex,
+//     (url) =>
+//       `<a
+// 			target="_blank"
+// 			rel="noopener noreferrer"
+// 			href="${url}">
+// 			${url}
+// 		</a>`
+//   );
+// };
 
 document.addEventListener("click", async (event) => {
   if (event.target === decrypt) {
@@ -73,7 +73,14 @@ document.addEventListener("click", async (event) => {
       getArrayBufferFromString(initializationVector.value),
       secret.value
     );
-    dataOutput.innerHTML = linkify.checked ? linkifyText(text) : text;
+    // dataOutput.innerHTML = linkify.checked
+    //   ? linkifyText(text)
+    //   : `<h4>Decrypted Text:</h4>
+    // <div>${text}</div>`;
+
+    dataOutput.innerHTML = `<h4>Decrypted Text:</h4>
+  <div>${text}</div>`;
+
   } else if (event.target === encrypt) {
     if (!secret.value) {
       dataOutput.innerHTML = "";
@@ -83,14 +90,10 @@ document.addEventListener("click", async (event) => {
 
     let { iv, encBuffer } = await encryptText(dataInput.value, secret.value);
     dataOutput.innerHTML = `
-		<div class='container pt-3'>
-		<div class='row'>
 		<h4>CipherText:</h4>
 			<div>${getStringFromArrayBuffer(encBuffer)}</div>
 			<h4>iv:</h4>
 			<pre>${getStringFromArrayBuffer(iv)}</pre>
-		</div>
-		</div>
 			`;
   }
 });

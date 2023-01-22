@@ -184,7 +184,9 @@ label input[type="text"] {
   font-size: 1em !important;
 }
 
-
+.output {
+  background-color: #212121 ;
+}
 
 /* /////////////footer///////////////// */
 .foot-cont {
