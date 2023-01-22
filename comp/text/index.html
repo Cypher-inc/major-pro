@@ -3,85 +3,255 @@
   <head>
     <title>Text Encryption / Decryption</title>
     <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap"
+    />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="../../css/bootstrap.min.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
 
   <body>
-    <div class="container">
-      <div class="row">
-        <main class="mt-4">
-          <section>
-            <img
-              src="encryption.png"
-              class="img-thumbnail rounded mx-auto d-block"
-              alt="txt enc/dec"
-            />
-            <h1 class="text-center heading">Text Encryption / Decryption</h1>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="ms-4 navbar-brand" href="#">Cybersecurity toolkit</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto me-5 align-items-center">
+              <a class="nav-link active" aria-current="page" href="#Home"
+                >Home</a
+              >
+              <a class="nav-link" href="#Generator">Features</a>
+              <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                  </a> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul
+                  class="dropdown-menu ms-auto"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="../text/index.html"
+                      >Text Enc/Dec</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pass/index.html"
+                      >Pass-tools</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../index.html"
+                      >Image Staeg</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
 
-            <h4 class="mt-2">Enter Text here</h4>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Enter Text here"
-                id="data-input"
-                style="height: 100px"
-              ></textarea>
+    <section id="Home">
+      <div class="container-fluid home-c">
+        <div class="row">
+          <div class="col-md-4 order-md-last col-12 text-center">
+    
+          <img
+              src="encryption.png"
+              alt="File Enc/Dec"
+              style="width:250px;height:230px;"
+            />
+          <h3 class="text-center heading">Text Encryption / Decryption</h4>
+            <p>Use your web browser to encrypt and decrypt text.</p>
+
+          </div>
+          <div class="col-md-8 order-md-first col-12 ps-5">
+            <h5 class="mb-3">Some Features We Provide :</h5>
+            <h2 class="mb-3">Check for if your password has been leaked</h2>
+            <h2 class="mb-3">Generate Safe and Secure Passwords easily</h2>
+
+            <h2 class="mb-3">Check the strength of your password</h2>  
+            <div class="started mt-5 text-center">
+              <a href="#Generator">
+                  <button
+                  class="bttn-dark"
+                  type="button"
+                >
+                  Get Started
+                </button>
+              </a>
+              
             </div>
-          </section>
-          <section class="mt-3">
-            <h4>Secret</h4>
-            <div class="input-group mb-3">
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Enter Secret Key"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-                id="secret"
-                autocomplete="false"
-                name="secret"
-              />
+          
             </div>
-            <button type="button" id="encrypt" class="btn btn-primary">
-              Encrypt
-            </button>
-            <hr />
-            <h4>Initialization Vector (iv)</h4>
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Enter Secret Key"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-                id="iv"
-              />
-            </div>
-            <label for="linkify" class="linkify-label mb-2">
-              Linkify text links (http/https)
-              <input id="linkify" type="checkbox" name="linkify" checked />
-            </label>
-            <button type="button" id="decrypt" class="btn btn-danger">
-              Decrypt
-            </button>
-            <p id="message"></p>
-          </section>
-          <section>
-            <h4>Output</h4>
-            <div id="data-output" class="output content"></div>
-          </section>
-        </main>
+      
+              </div>
+            </section>
+
+
+
+            <section id="enc" class="mt-3">
+              <div class="container enc-c">
+              <div class="row">
+                <h4 class="mt-2">Enter Text here</h4>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Enter Text here"
+                    id="data-input"
+                    style="height: 100px"
+                  ></textarea>
+                </div>
+              </div>
+                <h4>Secret</h4>
+                <div class="input-group mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter Secret Key"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="secret"
+                    autocomplete="false"
+                    name="secret"
+                  />
+                </div>
+                <button type="button" id="encrypt" class="btn btn-primary">
+                  Encrypt
+                </button>
+                <hr />
+                <h4>Initialization Vector (iv)</h4>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Secret Key"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    id="iv"
+                  />
+                </div>
+                <label for="linkify" class="linkify-label mb-2">
+                  Linkify text links (http/https)
+                  <input id="linkify" type="checkbox" name="linkify" checked />
+                </label>
+                <button type="button" id="decrypt" class="btn btn-danger">
+                  Decrypt
+                </button>
+                <p id="message"></p>
+        
+                <h4>Output</h4>
+                <div id="data-output" class="output content"></div>
+              </section>
+            </main>
+          </div>
+        </div>
+              </div>
+              </div>
+              
+    </section>
+
+    
+<section id="Footer">
+  <div class="foot-cont px-5 py-5 ">
+    <div class="row text-center justify-content-around">
+      <div class="col-sm-4 col-12 dis-text">
+        <h4>Disclaimer</h4>
+        <p>
+            This site is meant for educational purposes only. We are do NOT store any form of data, text or files
+        </p>
       </div>
-      <br>
-      <hr>
-      <h6 class="text-center">
-        This site is for educational use. Entered Files / Texts / passwords are
-        not logged.
-      </h6>
+
+
+      <div class="col-sm-4 col-12 dis-text dis1 mb-3">
+        <h4>Contact Us</h4>
+        <form action="https://formsubmit.co/godofxandar@gmail.com" method="POST">
+          <div class="input-group mb-3">
+          <input  class="form-control" type="email" name="email" placeholder="Email Address" required>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/landing-page1/Thankyou.html">
+          <input type="hidden" name="_autoresponse" value="Thank you for your interest! Your Message has been recieved. Our team will contact you soon">
+       </div>
+
+
+
+          <div class="input-group mb-3">
+          <textarea type="text" class="form-control" name="name" placeholder="Your Message" required></textarea>
+            </div>
+          <div class="services-btn send-btn mt-4 text-center">
+            <button class="bttn-dark" type="submit">Send</button>
+          </div>
+     </form>
+
+      </div>
+
+
+      <div class="col-sm-4 col-12 dis-text dis1">
+        <h4 class="mb-3">Devs Team</h4>
+        <div class="row align-items-center justify-content-center my-3">
+          <div class="col-6">
+              Kris Dsouza
+          </div>
+          <div class="col-6 icon-div">
+            <a href="https://www.instagram.com/kris_withh_a_k/" target="_blank"><img src="../../landing-page1/images/instagram.png" class="icon" alt="..." /></a>
+            <a href="https://github.com/Cypher-inc" target="_blank"><img src="../../landing-page1/images/github.png" class="icon" alt="..." /></a>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center justify-content-center my-3">
+          <div class="col-6 ">
+              Aaradhya Desai
+          </div>
+          <div class="col-6">
+            <a href="https://www.instagram.com/desai_aaradhya/" target="_blank"><img src="../../landing-page1/images/instagram.png" class="icon" alt="..." /></a>
+            <img src="../../landing-page1/images/github.png" class="icon" alt="..." />
+          </div>
+        </div>
+      
+
+        <div class="row  align-items-center justify-content-center my-3">
+          <div class="col-6">
+              Dhananjay Khedekar
+          </div>
+          <div class="col-6">
+            <a href="https://www.instagram.com/dhananjay__khedkar/" target="_blank"><img src="../../landing-page1/images/instagram.png" class="icon" alt="..." /></a>
+            <img src="../../landing-page1/images/github.png" class="icon" alt="..." />
+          </div>
+        </div>
+
+      </div>
     </div>
 
+    </div>
+  </div>
+
+</section>
+
     <script type="text/javascript" src="text.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

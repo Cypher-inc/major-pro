@@ -11,6 +11,8 @@ body {
 
 
 /* ////////////navbar////////////// */
+
+
 .navbar {
   background-color: black !important;
   font-family: "muli" !important;
@@ -191,6 +193,8 @@ a:hover {
   background-color: rgb(232, 245, 255);
 }
 
+
+/* /////////////footer///////////////// */
 .foot-cont {
   background-color: #18181a !important;
   color: aliceblue !important;
@@ -284,6 +288,23 @@ a:hover {
 .form-control{
   color: #000 !important;
 }
+
+/* ///////////Scroll to top button/////////////// */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 50% !important;
+  background-color: #5a4fcf !important;
+}
+
+
+#btn-back-to-top:hover{
+
+  background-color: #4339a9 !important;
+}
+
 
 /* /////////////media queries/////////// */
 @media (max-width: 768px) {
