@@ -33,7 +33,7 @@
               <a class="nav-link active" aria-current="page" href="#Home"
                 >Home</a
               >
-              <a class="nav-link" href="#Generator">Features</a>
+              <a class="nav-link" href="#enc">Features</a>
               <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Services
                   </a> -->
@@ -53,8 +53,8 @@
                   aria-labelledby="navbarDropdown"
                 >
                   <li>
-                    <a class="dropdown-item" href="../text/index.html"
-                      >Text Enc/Dec</a
+                    <a class="dropdown-item" href="../file/fille_enc_dec.html"
+                      >File Enc/Dec</a
                     >
                   </li>
                   <li>
@@ -83,6 +83,7 @@
           <img
               src="encryption.png"
               alt="File Enc/Dec"
+              class="enc-img"
               style="width:250px;height:230px;"
             />
           <h3 class="text-center heading">Text Encryption / Decryption</h4>
@@ -96,7 +97,7 @@
 
             <h2 class="mb-3">Check the strength of your password</h2>  
             <div class="started mt-5 text-center">
-              <a href="#Generator">
+              <a href="#enc">
                   <button
                   class="bttn-dark"
                   type="button"
@@ -115,7 +116,8 @@
 
 
             <section id="enc" class="mt-3">
-              <div class="container enc-c">
+              <div class="mt-5 container enc-c">
+                <h1 class="pt-4">Text Encryption / Decryption</h1>
               <div class="row">
                 <h4 class="mt-2">Enter Text here</h4>
                 <div class="form mb-4">
@@ -143,7 +145,7 @@
                 <button type="button" id="encrypt" class="btn btn-primary">
                   Encrypt
                 </button>
-                <hr />
+                <hr class="my-4"/>
                 <h4>Initialization Vector (iv)</h4>
                 <div class="input-group mb-3">
                   <input
@@ -166,7 +168,7 @@
                 <h4>Output</h4>
                 <div class='container pt-3'>
                   <div class='row'>
-                <div id="data-output" class="output content mt-3 mb-5 py-4"></div>
+                <div id="data-output" class="output content mb-5 py-5"></div>
               </div>
             </div>
               </section>
@@ -201,7 +203,7 @@
           <div class="input-group mb-3">
           <textarea type="text" class="form-control" name="name" placeholder="Your Message" required></textarea>
             </div>
-          <div class="services-btn send-btn mt-4 text-center">
+          <div class="services-btn send-btn mt-4">
             <button class="bttn-dark" type="submit">Send</button>
           </div>
      </form>
@@ -226,7 +228,7 @@
           <div class="col-6 ">
               Aaradhya Desai
           </div>
-          <div class="col-6">
+          <div class="col-6 icon-div">
             <a href="https://www.instagram.com/desai_aaradhya/" target="_blank"><img src="../../landing-page1/images/instagram.png" class="icon" alt="..." /></a>
             <img src="../../landing-page1/images/github.png" class="icon" alt="..." />
           </div>
@@ -237,7 +239,7 @@
           <div class="col-6">
               Dhananjay Khedekar
           </div>
-          <div class="col-6">
+          <div class="col-6 icon-div">
             <a href="https://www.instagram.com/dhananjay__khedkar/" target="_blank"><img src="../../landing-page1/images/instagram.png" class="icon" alt="..." /></a>
             <img src="../../landing-page1/images/github.png" class="icon" alt="..." />
           </div>
@@ -250,6 +252,17 @@
   </div>
 
 </section>
+
+<!-- //////////////Scroll btn//////////////// -->
+<button
+type="button"
+class="btn btn-floating btn-lg scroll-top-btn"
+id="btn-back-to-top"
+>
+<!-- <i class="fas fa-arrow-up"></i> -->
+<img src="../../landing-page1/images/arrow-up.svg" alt="..." width="25" height="30"/>
+
+</button>
 
     <script type="text/javascript" src="text.js"></script>
     <script src="../../js/bootstrap.bundle.min.js"></script>
