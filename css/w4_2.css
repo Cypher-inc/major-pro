@@ -90,20 +90,23 @@ div h2{
 
 .navbar {
   background-color: black !important;
-
 }
 
 .navbar-brand {
+  font-family: "muli" !important;
+
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 800;
   color: aliceblue !important;
 }
 
 .navbar-nav a {
+  font-family: "muli" !important;
+
   font-size: 1.4em;
   margin-left: 20px !important;
   margin-right: 20px !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
 }
 
 /* /////////////////// */
@@ -193,7 +196,31 @@ div .stag_but1{
 }
 
 
+.input-l{
+  cursor: pointer;
+  color: aliceblue !important;
+  padding: 10px 15px 10px 15px !important;
+  background-color: #343333 !important;
+}
+
+
+.input-l:hover{
+ 
+  background-color: #172238 !important;
+}
+
 /* //////////////////media/////////////////////// */
+
+@media (max-width: 768px) {
+  .btn{
+    font-size: 0.8em !important;
+  }
+
+  canvas{
+    height:45vw;
+  }
+}
+
 
 /* @media (max-width: 1200px) {
   #myVideo{
@@ -239,26 +266,7 @@ div .stag_but1{
 }
 
 
-@media (min-width: 567px) and (max-width: 768px) {
-  #myVideo{
-    position: fixed;
-    right: 0;
-    top:0;
-    width:250%;
-    margin:0px;
-    padding:0px
-  }
 
-  .col1{
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  canvas{
-    height: 300px;
-  }
-  
-}
 
 @media (max-width: 567px){
 

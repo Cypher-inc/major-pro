@@ -5,7 +5,10 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap"
+    />
     <link rel="stylesheet" href="../../css/w4_2.css" />
 
     <link rel="stylesheet" href="../../css/bootstrap.min.css" />
@@ -149,17 +152,28 @@
             <canvas id="canvas"> </canvas>
 
             <div class="row text-center">
-              <div class="col-md-6">
+              <div class="col-6">
                 <input
+                  type="file"
+                  multiple="false"
+                  id="finput"
+                  onchange="upload()"
+                  style="display:none;"
+                />
+                  <!-- <input type="file" id="files" style="display:none;"/> -->
+                  <label for="finput" class="input-l">Select file</label>
+           
+
+                <!-- <input
                   type="file"
                   multiple="false"
                   accept="image/*"
                   id="finput"
                   class="col1 in1"
                   onchange="upload()"
-                />
+                /> -->
               </div>
-              <div class="col-md-6">
+              <div class="col-6">
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -175,17 +189,28 @@
             <canvas id="canvas1"> </canvas>
 
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-6">
                 <input
+                type="file"
+                multiple="false"
+                id="finput1"
+                onchange="upload1()"
+                style="display:none;"
+              />
+                <!-- <input type="file" id="files" style="display:none;"/> -->
+                <label for="finput1" class="input-l">Select file</label>
+         
+
+                <!-- <input
                   type="file"
                   multiple="false"
                   accept="image/*"
                   id="finput1"
                   class="col1 in2"
                   onchange="upload1()"
-                />
+                /> -->
               </div>
-              <div class="col-md-6">
+              <div class="col-6">
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -312,6 +337,8 @@
     <script src="../../js/jquery.slim.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
 
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
     <script src="../../js/w4_2.js"></script>
