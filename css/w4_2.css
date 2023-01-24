@@ -4,10 +4,12 @@
   margin: 0px;
   }
 
-
+body{
+  background-color: black !important;
+}
 
   canvas{
-    height:300px;
+    height:20vw;
     border: 1px solid;
     /* box-shadow: 5px 10px 18px #888888; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
@@ -86,39 +88,43 @@ div h2{
 }
 /* //////////////////navbar///////////////////// */
 
-div .navbar{
-  color: #579abe;
-  padding-top: 10px;
-}
-
-div .navbar-brand {
-  font-size: 25px;
-  font-weight: 500;
-}
-
-div .navbar-nav a{
-  font-size: 18px;
-  font-weight: 500;
-}
-
-nav a{
-  color: #579abe !important;
-  /* color:#e03e52 !important; */
+.navbar {
+  background-color: black !important;
 
 }
 
-nav{
-  padding: 20px;
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: aliceblue !important;
 }
 
-nav button{
-  color: #579abe !important;
-  background-color: #579abe !important;
+.navbar-nav a {
+  font-size: 1.4em;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  font-weight: 500 !important;
 }
 
-div .navbar-nav .active, .navbar-brand{
-  filter: brightness(140%);
+/* /////////////////// */
+.navbar-nav a:hover {
+  /* background-color: #D9AFD9; */
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+
+  /* -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text;
 }
+
+
+.dropdown-menu{
+  background-color:#212121 !important;
+  float: right !important;
+}
+
+.dropdown-item{
+  font-size: 1em !important;
+}
+
 /* //////////////////buttons///////////////////// */
 
 .col1{
@@ -189,11 +195,10 @@ div .stag_but1{
 
 /* //////////////////media/////////////////////// */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   #myVideo{
     position: fixed;
     right: 0;
-    /* bottom: 0; */
     top:0;
     width:120%;
  
@@ -213,7 +218,6 @@ div .stag_but1{
   #myVideo{
     position: fixed;
     right: 0;
-    /* bottom: 0; */
     top:0;
     width:150%;
   }
@@ -224,7 +228,6 @@ div .stag_but1{
   #myVideo{
     position: fixed;
     right: 0;
-    /* bottom: 0; */
     top:0;
     width:150%;
   }
@@ -240,7 +243,6 @@ div .stag_but1{
   #myVideo{
     position: fixed;
     right: 0;
-    /* bottom: 0; */
     top:0;
     width:250%;
     margin:0px;
@@ -261,9 +263,7 @@ div .stag_but1{
 @media (max-width: 567px){
 
   #myVideo{
-    /* position: fixed;
-    right: 0;
-    width:400%; */
+
     display: none;
   }
 
@@ -302,12 +302,10 @@ div .stag_but1{
 
 
   .can1 input{
-    /* margin-left:10px ; */
     margin-bottom: 20px;
   }
 
   .can2 input{
-    /* margin-left:10px ; */
     margin-bottom: 20px;
 
   }
@@ -321,7 +319,7 @@ div .stag_but1{
   }
 
   
-}
+} */
 
 
 /* ///////////////////////about/////////////////////////////// */
