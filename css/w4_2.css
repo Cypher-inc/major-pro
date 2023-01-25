@@ -60,31 +60,18 @@ body{
   
   
 h1{
-    text-align: center;
+    /* text-align: center; */
     font-size: 40px;
     color: aliceblue;
-}
-
-div{
-    text-align: center;
-    margin: 0;
-}
-
-p{
-  margin-left: 10px;
 }
 
 .col1{
   font-size: 15px;
 }
 
-div h1{
-  color: white;
-  margin-bottom: 40px;
-}
 
-div h2{
-  color: white;
+h2,h1,h5{
+  color: aliceblue ;
 }
 /* //////////////////navbar///////////////////// */
 
@@ -97,11 +84,11 @@ div h2{
 
   font-size: 1.5em;
   font-weight: 800;
-  color: aliceblue !important;
 }
 
 .navbar-nav a {
   font-family: "muli" !important;
+  color: aliceblue !important;
 
   font-size: 1.4em;
   margin-left: 20px !important;
@@ -199,7 +186,7 @@ div .stag_but1{
 .input-l{
   cursor: pointer;
   color: aliceblue !important;
-  padding: 10px 15px 10px 15px !important;
+  padding: 8px 15px 8px 15px !important;
   background-color: #343333 !important;
 }
 
@@ -208,6 +195,126 @@ div .stag_but1{
  
   background-color: #172238 !important;
 }
+
+
+
+/* ///////////////home////////////////// */
+.home-c {
+  padding-top: 10% !important;
+  padding-bottom: 10% !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+
+.home-t > h1{
+font-size: 2.1em !important;
+/* text-align: start; */
+/* font-weight: 800 !important; */
+}
+
+.bttn-dark {
+  font-size: 20px !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  border: 3px solid #af52c3;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.bttn-dark:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #af52c3;
+  z-index: -1;
+}
+.bttn-dark:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.bttn-dark:focus:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.started button {
+  float: left !important;
+  padding: 15px 22px 15px 22px;
+  color: aliceblue;
+  background-color: #5a4fcf;
+  border: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-radius: 2%;
+}
+
+
+
+/* /////////////footer///////////////// */
+.foot-cont {
+  background-color: #18181a !important;
+  color: aliceblue !important;
+}
+
+.dis-text {
+  padding-left: 6% !important;
+  padding-right: 8% !important;
+  text-align: justify;
+}
+
+.send-btn {
+  text-align: start !important;
+}
+
+.icon {
+  height: 30px !important;
+  margin-left: 5% !important;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  background-color: #18181a;
+}
+.icon {
+  transition: transform 0.4s;
+}
+
+
+.services-btn button {
+  padding: 10px 15px 10px 15px;
+  color: aliceblue;
+  background-color: #5a4fcf;
+  border: 0;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 2%;
+}
+
+.send-btn button{
+font-size: 1em !important;
+}
+
+.form-control{
+  color: #000 !important;
+}
+
 
 /* //////////////////media/////////////////////// */
 

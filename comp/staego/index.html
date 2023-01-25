@@ -19,7 +19,7 @@
     <section id="navbar">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="ms-4 navbar-brand" href="#">Cybersecurity toolkit</a>
+          <a class="ms-4 navbar-brand" href="../../landing-page1/index.html">Cybersecurity toolkit</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -36,7 +36,7 @@
               <a class="nav-link active" aria-current="page" href="#Home"
                 >Home</a
               >
-              <a class="nav-link" href="#enc">Features</a>
+              <a class="nav-link" href="#Features">Features</a>
               <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                 </a> -->
@@ -78,10 +78,43 @@
       </nav>
     </section>
 
+    <section id="Home">
+      <div class="container-fluid mt-5 mb-4 home-c">
+        <div class="row align-items-center">
+          <div class="col-md-4 order-md-last col-12 text-center">
+            <img
+              src="../staego/images/hide.png"
+              alt="PassCheck logo"
+              style="width: 250px; height: 230px"
+            />
+            <h1>Steganography</h1>
+          </div>
+
+          <div class="col-md-8 order-md-first col-12 ps-5">
+            <div class="home-t">
+              <h5 class="mb-3">Some Features We Provide :</h5>
+              <h1 class="mb-3">Check for if your password has been leaked</h1>
+              <h1 class="mb-3">Generate Safe and Secure Passwords easily</h1>
+
+              <h1 class="mb-3">Check the strength of your password</h1>
+            </div>
+
+            <div class="started mt-5 text-center">
+              <a href="#Features">
+                <button class="bttn-dark" type="button">Get Started</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Features"></section>
+
     <div class="content pos row-centered">
       <div class="test1 col-md-12 col-sm-12 col-xs-12 col-centered"></div>
 
-      <div class="alert alert-warning alert-dismissible" role="alert">
+      <div class="alert alert-warning alert-dismissible mt-5" role="alert">
         <strong>Note: </strong> Please refer to
         <a href="instructions.html" target="_blank" class="alert-link"
           >Instructions</a
@@ -97,53 +130,6 @@
 
       <h1>Image Steganography</h1>
 
-      <!-- <div class="container">
-                <div class="row row-content">
-                 
-                    <div class="order-sm-first can1 col-xl-6">
-                        <h2>
-                            Image 1
-                        </h2>
-                        <canvas id="canvas">
-                        </canvas> 
-
-                        <input type="file" 
-                        multiple="false" 
-                        accept="image/*"
-                        id="finput"
-                       class="col1 in1"
-                        onchange="upload()">
-                      
-                      
-                     
-                        <button type="button" 
-                        class="btn btn-primary"
-                        onclick = "download_img()">
-                        Download</button>
-                      </div>
-                 
-                    <div class="order-sm-last can2 col-xl-6">
-                        <h2>
-                            Image 2
-                        </h2>
-                        <canvas id="canvas1">
-                        </canvas> 
-        
-                        <input type="file" 
-                        multiple="false" 
-                        accept="image/*"
-                        id="finput1"
-                        class="col1 in2"
-                        onchange="upload1()">
-
-                        <button type="button" 
-                        class="btn btn-primary"
-                        onclick = "download_img1()">
-                        Download</button>
-                    </div>    
-                  
-                </div>
-                </div> -->
 
       <div class="container">
         <div class="row">
@@ -158,11 +144,10 @@
                   multiple="false"
                   id="finput"
                   onchange="upload()"
-                  style="display:none;"
+                  style="display: none"
                 />
-                  <!-- <input type="file" id="files" style="display:none;"/> -->
-                  <label for="finput" class="input-l">Select file</label>
-           
+                <!-- <input type="file" id="files" style="display:none;"/> -->
+                <label for="finput" class="input-l">Select file</label>
 
                 <!-- <input
                   type="file"
@@ -191,15 +176,14 @@
             <div class="row">
               <div class="col-6">
                 <input
-                type="file"
-                multiple="false"
-                id="finput1"
-                onchange="upload1()"
-                style="display:none;"
-              />
+                  type="file"
+                  multiple="false"
+                  id="finput1"
+                  onchange="upload1()"
+                  style="display: none"
+                />
                 <!-- <input type="file" id="files" style="display:none;"/> -->
                 <label for="finput1" class="input-l">Select file</label>
-         
 
                 <!-- <input
                   type="file"
@@ -306,7 +290,9 @@
               aria-label="Close"
             ></button>
           </div>
-          <input
+
+          <div class="btn-div mb-5">
+            <input
             type="button"
             value="Hide Image"
             id="clr1"
@@ -329,16 +315,92 @@
             class="col1 c1 btn btn-light"
             onclick="clearCanvas()"
           />
+          </div>
         </div>
       </div>
     </div>
+
+       
+<section id="Footer">
+  <div class="foot-cont px-5 py-5 ">
+    <div class="row text-center justify-content-around">
+      <div class="col-sm-4 col-12 dis-text">
+        <h4>Disclaimer</h4>
+        <p>
+            This site is meant for educational purposes only. We are do NOT store any form of data, text or files
+        </p>
+      </div>
+
+
+      <div class="col-sm-4 col-12 dis-text dis1 mb-3">
+        <h4>Contact Us</h4>
+        <form action="https://formsubmit.co/godofxandar@gmail.com" method="POST">
+          <div class="input-group mb-3">
+          <input  class="form-control" type="email" name="email" placeholder="Email Address" required>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/landing-page1/Thankyou.html">
+          <input type="hidden" name="_autoresponse" value="Thank you for your interest! Your Message has been recieved. Our team will contact you soon">
+       </div>
+
+
+
+          <div class="input-group mb-3">
+          <textarea type="text" class="form-control" name="name" placeholder="Your Message" required></textarea>
+            </div>
+          <div class="services-btn send-btn mt-4">
+            <button class="bttn-dark" type="submit">Send</button>
+          </div>
+     </form>
+
+      </div>
+
+
+      <div class="col-sm-4 col-12 dis-text dis1">
+        <h4 class="mb-3">Devs Team</h4>
+        <div class="row align-items-center justify-content-center my-3">
+          <div class="col-6">
+              Kris Dsouza
+          </div>
+          <div class="col-6 icon-div">
+            <a href="https://www.instagram.com/kris_withh_a_k/" target="_blank"><img src="../../landing-page1/images/instagram.png" class="icon" alt="..." /></a>
+            <a href="https://github.com/Cypher-inc" target="_blank"><img src="../../landing-page1/images/github.png" class="icon" alt="..." /></a>
+          </div>
+        </div>
+
+
+        <div class="row align-items-center justify-content-center my-3">
+          <div class="col-6 ">
+              Aaradhya Desai
+          </div>
+          <div class="col-6 icon-div">
+            <a href="https://www.instagram.com/desai_aaradhya/" target="_blank"><img src="../../landing-page1/images/instagram.png" class="icon" alt="..." /></a>
+            <img src="../../landing-page1/images/github.png" class="icon" alt="..." />
+          </div>
+        </div>
+      
+
+        <div class="row  align-items-center justify-content-center my-3">
+          <div class="col-6">
+              Dhananjay Khedekar
+          </div>
+          <div class="col-6 icon-div">
+            <a href="https://www.instagram.com/dhananjay__khedkar/" target="_blank"><img src="../../landing-page1/images/instagram.png" class="icon" alt="..." /></a>
+            <img src="../../landing-page1/images/github.png" class="icon" alt="..." />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+</section>
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="../../js/jquery.slim.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/bootstrap.bundle.min.js"></script>
-
 
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
     <script src="../../js/w4_2.js"></script>
