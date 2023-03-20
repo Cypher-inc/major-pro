@@ -136,13 +136,13 @@
         <div class="row">
           <div class="col-md-6 col-12">
             <h2>Image 1</h2>
-            <canvas id="canvas"> </canvas>
+            <canvas id="canvas_id"> </canvas>
 
             <div class="row text-center">
               <div class="col-6">
                 <input
                   type="file"
-                  multiple="false"
+                  name="image"
                   id="finput"
                   onchange="upload()"
                   style="display: none"
@@ -306,7 +306,7 @@
             value="Extract Image"
             id="clr"
             class="col1 btn btn-danger"
-            onclick="extractionMain()"
+            onclick="extraction()"
           />
 
           <input
